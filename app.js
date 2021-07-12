@@ -1,3 +1,5 @@
+const taroApp = require('./taro/app.js').taroApp
+
 // app.js
 App({
   onLaunch() {
@@ -13,6 +15,15 @@ App({
       }
     })
   },
+  onShow () {
+    taroApp.onShow()
+  },
+
+  onHide () {
+    taroApp.onHide()
+  },
+
+
   globalData: {
     userInfo: null
   }

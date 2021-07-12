@@ -17,6 +17,7 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
+  <button type="primary" style="margin:20px" bindtap="goToIndex">跳转到 Taro index </button>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>

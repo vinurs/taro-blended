@@ -1,3 +1,4 @@
+const path = require('path')
 const config = {
   projectName: 'taro-project',
   date: '2021-7-12',
@@ -9,7 +10,7 @@ const config = {
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
-  plugins: [],
+  plugins: [path.join(process.cwd(), '/plugin-mv/index.js')],
   defineConstants: {
   },
   copy: {
